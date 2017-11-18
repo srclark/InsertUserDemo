@@ -1,6 +1,15 @@
 # InsertUserDemo
 Demo of a single page web app using node.js, express, mysql, sequelize, and jade.  This app is a single page app that includes a rest api that allows for inserting users into a table and deleting the users.  My node version is 8.9.0.  All non-global packages have been saved to package.json.
 
+## Clone and start
+
+1.  Clone the repo
+2.  In the command line, ```cd InsertUserDemo```
+3.  Install the packages, ```npm install```
+4.  Start the app, ```npm start```
+
+Note: You can install nodemon ```node install -g nodemon``` to keep the app running while debugging.  See https://www.npmjs.com/package/nodemon
+
 ## Express
 
 I used express-generator to jump start the project, then modified the projects to meet my needs
