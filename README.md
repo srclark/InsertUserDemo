@@ -7,7 +7,8 @@ Demo of a single page web app using node.js, express, mysql, sequelize, and jade
 2.  In the command line, ```cd InsertUserDemo```
 3.  Install the packages, ```npm install```
 4.  Start the app, ```npm start```
-5.  Have fun!
+5.  Go to localhost:3000 in your browser
+6.  Have fun!
 
 Note: You can install nodemon ```node install -g nodemon``` to keep the app running while debugging.  See https://www.npmjs.com/package/nodemon
 
