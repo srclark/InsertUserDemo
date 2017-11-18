@@ -1,0 +1,54 @@
+extends layout
+
+block content
+
+  // Container
+  #userContainer(class='container')
+    h1= title
+    // Add a user
+    #addUser(class='col-xs-7')
+      fieldset(class='form-horizontal')
+        h2 Add Users
+        p.note Please fill in all the fields
+        div.form-group
+          label(for='first-name', class='control-label col-sm-3') First Name:
+          div.col-sm-9
+            input#setFirstName(class='form-control', type='text', placeholder='First Name')
+        div.form-group
+          label(for='last-name', class='control-label  col-sm-3') Last Name:
+          div.col-sm-9
+            input#setLastName(class='form-control', type='text', placeholder='Last Name')
+        div.form-group
+          label(for='street-addr', class='control-label col-sm-3') Street Address:
+          div.col-sm-9
+            input#setStreetAddr(class='form-control', type='text', placeholder='Street Address')
+        div.form-group
+          label(for='city', class='control-label col-sm-3') City:
+          div.col-sm-9
+            input#setCity(class='form-control', type='text', placeholder='City')
+        div.form-group
+          label(for='state', class='control-label col-sm-3') State:
+          div.col-sm-9
+            select#setState(class='form-control')
+              - states = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'District of Columbia', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming']
+              each state in states
+                option(value=state) #{state}
+        div.form-group
+          label(for='label', class='control-label col-sm-3') Zip Code:
+          div.col-sm-9
+            input#setZipCode(class='form-control', type='text', placeholder='Zip Code')
+        button#btnAddUser(type='button' class='btn btn-primary') Add User
+
+    // List of current users
+    #userList(class='table-responsive col-xs-12')
+      h2 Current Users
+      table#userTable(class='table table-striped')
+        thead
+          th(class='short-str') First Name
+          th(class='short-str') Last Name
+          th(class='long-str') Street Address
+          th(class='short-str') City
+          th(class='short-str') State
+          th(class='zip') Zip Code
+          th Delete?
+        tbody

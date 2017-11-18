@@ -1,0 +1,78 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+button {
+  background-color: #007cba; /* Green */
+  border: none;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #008cba;
+}
+
+fieldset {
+  padding: 10px;
+  max-width: 400px;
+  background-color: #efefef;
+}
+
+.formElement {
+  margin-bottom: 5px;
+}
+
+input, select {
+  padding: 5px;
+  font-size: .85em;
+}
+
+label {
+  padding-right: 10px;
+}
+
+p.note {
+  color: #007cba;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr {
+  color: #666B85;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+th {
+  color: #D5DDE5;
+  background: #555555;
+  font-size: 16px;
+  font-weight: 100;
+  padding: 15px 8px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+td {
+  text-align: left;
+  padding: 8px;
+}
