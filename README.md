@@ -30,3 +30,7 @@ I used MySQL 5.7 with the mysql2 and sequelize modules.  I used sequelize and ex
 ## bootstrap styling
 
 Although I'm used to creating user interfaces from designer specs, I completely used Bootstrap styling for my app.
+
+## Error Handling
+
+Right now I'm handling all errors returned from sequelize with an alert.  For express-validator errors, I'm showing just the first error above the user insert form.
