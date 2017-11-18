@@ -13,7 +13,7 @@ Note: You can install nodemon ```node install -g nodemon``` to keep the app runn
 
 ## Express
 
-I used express-generator to jump start the project, then modified the projects to meet my needs
+I used express-generator to jump start the project, then modified the projects to meet my needs.  Express-generator creates jade files even though the template engine has been replaced by pug.  I have not replaced jade with pug.
 
 ## mysql/sequelize
 
