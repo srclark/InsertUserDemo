@@ -1,5 +1,5 @@
 # InsertUserDemo
-Demo of a single page web app using node.js, express, mysql, sequelize, and jade.  This app is a single page app that includes a rest api that allows for inserting users into a table and deleting the users.  My node version is 8.9.0.
+Demo of a single page web app using node.js, express, mysql, sequelize, and jade.  This app is a single page app that includes a rest api that allows for inserting users into a table and deleting the users.  My node version is 8.9.0.  All non-global packages have been saved to package.json.
 
 ## Express
 
